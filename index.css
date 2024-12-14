@@ -1,0 +1,270 @@
+/* Font Inter */
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-regular-italic {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* -------------- */
+
+/* Text Colors */
+
+.color-pink {
+    color: #FF6B82;
+}
+
+.color-white {
+    color: #fff;
+}
+
+/* ------------ */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+header > span {
+    width: 100px;
+    border: 1px solid #c8c8c8;
+}
+
+header > h1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.content-body{
+    margin: 0px 25px 25px 0px;
+    transform-origin: top center;
+}
+
+.box-container {
+    position: relative;
+    padding: 0px 30px;
+    width: inherit;
+    margin: 15px auto;
+}
+
+.box-default {
+    border: 1px solid #c8c8c8;
+}
+
+.box-active {
+    background-color: #FFF9FA;
+    border: 4px solid #FF6B82;
+}
+
+.tag-label {
+    position: absolute;
+    background-color: #FF6B82;
+    padding: 15px;
+    top: -15px;
+    right: 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box-heading {
+    margin-bottom: 0px;
+}
+
+.box-sub {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.price-heading {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.price-sub {
+    font-size: 18px;
+    margin-top: 2px;
+    color: #c8c8c8;
+    text-decoration: line-through;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.offer {
+    margin-left: 8px;
+    background-color: #FF6B82;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+/* Custom Radio Button */
+
+/* Hide Native Radio Input */
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+
+    /* Custom Style */
+    font: inherit;
+    color: #c8c8c8;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    margin-right: 1.1rem;
+
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    border: 0.15em solid #FF6B82;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #FF6B82;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.visible {
+    transition: max-height .5s ease-in, transform .3s ease-in;
+    max-height: 200px;
+    transform: scaleY(1);
+}
+
+.hidden {
+    margin-bottom: 0px;
+    transition: max-height .5s ease-out, transform .3s ease-out;
+    max-height: 0px;
+    transform: scaleY(0);
+}
+
+/* ------------------------------------- */
+
+/* Table */
+
+td {
+    padding: 2px 5px;
+}
+
+/* ------------------------- */
+
+/* Custom Select Element*/
+
+select {
+    font-size: 16px;
+    width: 100px;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 8px 10px;
+}
+
+/* ------------------------ */
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 50%;
+    font-size: 20px;
+}
+
+footer > button {
+    padding: 10px;
+    margin: 0px auto;
+    width: 50%;
+    font-size: 18px;
+    background-color: #FF6B82;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer > button > span {
+    font-size: 25px;
+}
+
+.footer-credit {
+    display: flex;
+    justify-content: end;
+    color: #c8c8c8;
+    margin: 0px auto;
+    width: 50%;
+    margin-top: 10px;
+}
+
+/* -------------------- */
